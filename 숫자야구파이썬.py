@@ -51,7 +51,7 @@ tries=0
 while(1):
     guess=selectnum()
     strike,ball=score(guess,rightanswer)
-    print("{}S {}B ".format(strike, ball))
+    print("{}스트라이크 {}볼 ".format(strike, ball))
 
     if strike ==3:
         print("아웃")
