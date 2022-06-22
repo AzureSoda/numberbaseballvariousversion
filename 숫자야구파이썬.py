@@ -5,7 +5,7 @@ def generate_num(): #랜덤한숫자만드는 함수
     i=0
     newnum=0
     while i<3:
-        newnum=randint(0,9)
+        newnum=randint(1,9)
         if newnum not in num:
             num.append(newnum)
             i+=1
@@ -18,7 +18,7 @@ def selectnum():
     newinputnum=[]
     while i<3:
         inputnum=int(input("{}번째 숫자 입력하기: ".format(i+1)))
-        if inputnum > 9 and inputnum<0: #이상한 숫자 입력한 경우
+        if inputnum > 9 and inputnum<1: #이상한 숫자 입력한 경우
             print("잘못된 숫자 입력입니다")
             continue
         if inputnum in newinputnum: #중복
